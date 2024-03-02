@@ -111,6 +111,8 @@ span{
 }
 .typing{
     display: inline-block;
+    animation: typing 3s steps(28, end);
+    -webkit-animation: typing 3s steps(28, end);
 }
 @keyframes typing{
     0%{
@@ -123,8 +125,4 @@ span{
     100%{
         border-right: 0;
     }
-}
-.typing{
-    animation: typing 3s steps(28, end);
-    -webkit-animation: typing 3s steps(28, end);
 }
