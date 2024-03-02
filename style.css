@@ -107,5 +107,24 @@ span{
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
+    }
 }
+.typing{
+    display: inline-block;
+}
+@keyframes typing{
+    0%{
+        width: 0;
+        border-right: .06em solid #333333;
+    }
+    99%{
+        border-right: .06em solid #333333;
+    }
+    100%{
+        border-right: 0;
+    }
+}
+.typing{
+    animation: typing 3s steps(28, end);
+    -webkit-animation: typing 3s steps(28, end);
 }
